@@ -1,0 +1,17 @@
+@mixin color-switch($background-color) {
+  display:  block;
+  background-color: $background-color;
+}
+
+@mixin input-styles($background-color, $text-color){
+  background-color: $background-color;    
+  color: $text-color;  
+}
+
+@mixin button-shadow($background-color, $shadow, $shadow-color, $text-color) {
+  background-color: $background-color;
+    -webkit-box-shadow: $shadow $shadow-color;
+   -moz-box-shadow: $shadow $shadow-color;
+   box-shadow: $shadow $shadow-color;
+   color: $text-color;
+}

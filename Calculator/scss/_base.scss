@@ -1,0 +1,135 @@
+//  Color Variable 
+
+$border-radius: 8px;
+   
+$btn-shadow: 0px 4px 1px -1px;
+$btn-shadow-hover: 0px 5px 2px -1px;
+$white-color: white;
+
+/* Theme one */
+
+   /* Backgrounds */
+   $dark-main-background: hsl(222, 26%, 31%);
+   $dark-blue-toggle-background: hsl(223, 31%, 20%);
+   $dark-blue-screen-background: hsl(224, 36%, 15%);
+   
+   /* Keys */
+   
+   $dark-key-bacground: hsl(225, 21%, 49%);
+   $dark-key-shadow: hsl(224, 28%, 35%);
+   
+   $red-key-background: hsl(6, 63%, 50%);
+   $red-key-shadow: hsl(6, 70%, 34%);
+   
+   $light-grey-key-background: hsl(30, 25%, 89%);
+   $greylish-key-shadow: hsl(28, 16%, 65%);
+   
+   /* Text */
+   
+   $dark-greyish-text: hsl(221, 14%, 31%);
+   
+   
+   /* Theme 2 */
+   
+   /* Backgrounds */
+   $light-gray-main-background: hsl(0, 0%, 90%);
+   $light-toggle-background: hsl(0, 5%, 81%);
+   $light-screen-background: hsl(0, 0%, 93%);
+   
+   /* Keys */
+   
+   $dark-cyan-key-background: hsl(185, 42%, 37%);
+   $darkest-cyan-key-shadow: hsl(185, 58%, 25%);
+   
+   $orange-key-background: hsl(25, 98%, 40%);
+   $dark-orange-key-shadow: hsl(25, 99%, 27%);
+   
+   $grayish-yellow-key-background: hsl(45, 7%, 89%);
+   $dark-grayish-orange-key-shadow: hsl(35, 11%, 61%);
+   
+   /* Text */
+   $darkest-grayish-yellow: hsl(60, 10%, 19%);
+   
+   /* Theme 3*/
+   /* Backgroubd */
+   $darkest-violet-main-background: hsl(268, 75%, 9%);
+   $darkest-violet-toggle-background:  hsl(268, 71%, 12%);
+   
+   /* Keys */
+   
+   $dark-violet-key-background: hsl(281, 89%, 26%);
+   $magenta-key-shadow: hsl(285, 91%, 52%);
+   
+   $cyan-key-background: hsl(176, 100%, 44%);
+   $soft-cyan-key-shadow: hsl(177, 92%, 70%);
+   
+   $darkest-violet-key-background: hsl(268, 47%, 21%);
+   $dark-magenta-key-shadow: hsl(290, 70%, 36%);
+   
+   /* Text */
+   $light-yellow: hsl(52, 100%, 62%);
+   $very-dark-blue: hsl(198, 20%, 13%);
+   
+ 
+
+*,
+*::before,
+*::after  {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 50px auto;
+  font-family: 'Spartan', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 25px;
+}
+h6 {
+  font-size: 12px;   
+  text-transform: uppercase;       
+}
+label {
+  cursor: pointer;
+}
+
+.theme-blue {
+  background-color: $dark-main-background;
+  color: white;
+  text-align: center;
+}
+
+.calc-section {
+  max-width: 40%;
+  margin: auto;
+}
+
+.calc-screen {
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+}
+
+.calc-screen input {
+  display: inline-block;
+  padding: 25px;
+  width: 100%;
+  text-align: right;
+  outline: 0;
+  border: 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  font-size: 37px;
+  font-weight: 700;
+}
+
+.calc-btn-container,
+.calc-btn-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+

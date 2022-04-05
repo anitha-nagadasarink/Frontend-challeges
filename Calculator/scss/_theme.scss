@@ -1,0 +1,177 @@
+.calc-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.theme-switcher-container {
+  display: flex;
+  align-items: flex-end;
+
+  h6 {
+    margin-right: 10px;
+  }
+}
+
+.color-numbers {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+
+.color-themes {
+  display: flex;
+}
+
+
+.calc-section {
+  max-width: 40%;
+  margin: auto;
+}
+.calc-screen {
+  border-radius: $border-radius;
+  margin-bottom: 20px;
+
+  input[type=text] {
+    display: inline-block;
+    padding: 25px;
+    width: 100%;
+    text-align: right;
+    outline: 0;
+    border: 0;
+    border-radius: $border-radius;
+    overflow: hidden;
+    font-size: 37px;
+    font-weight: 700;
+  }
+}
+
+.calc-btn-container,
+.calc-btn-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;           
+}
+.calc-btn-container {
+  padding: 30px 20px; 
+  border-radius: $border-radius; 
+}
+
+// Theme Switches
+.theme-blue {
+  background-color: $dark-main-background;
+  color: $white-color;
+  text-align: center;
+}
+
+.theme-white {
+  background-color: $light-gray-main-background;
+}
+.theme-purple {
+  background-color: $darkest-violet-main-background;
+  color: $light-yellow;
+}
+
+.color-themes {
+  padding: 4px 8px;
+  border-radius: 60px;
+  margin-top: 2px;
+  background-color: rgba(0, 0, 0, .15);
+}
+.color-switch {
+  padding: 0 7px; 
+  border-radius: 50%; 
+  background-color: transparent;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+//Theme 1:  Dark blue and Grey
+
+.theme-blue{
+
+  .color-switch-blue { 
+    @include color-switch($red-key-background);
+  }
+ input[type=text] {    
+     @include input-styles($dark-blue-screen-background, $white-color);  
+  }
+
+  .calc-btn-container,
+  .color-themes{
+    background-color: $dark-blue-toggle-background;
+  }
+
+  .btn {
+     @include button-shadow($light-grey-key-background, $btn-shadow, $greylish-key-shadow, $dark-greyish-text);   
+   }
+
+   .btn-del,
+   .btn-reset  {
+     @include button-shadow($dark-key-bacground, $btn-shadow, $dark-key-shadow, $white-color); 
+   }
+
+   .btn-equals {
+     @include button-shadow($red-key-background, $btn-shadow, $red-key-shadow, $white-color);
+  }
+}
+
+// Theme 2: White and Red
+.theme-white  {
+  .color-switch-white {   
+    @include color-switch($orange-key-background);
+  }
+
+  input[type=text]{
+    @include input-styles($light-screen-background, $darkest-grayish-yellow); 
+  }
+  .calc-btn-container,
+  .color-themes{
+    background-color: $light-toggle-background;
+  }
+
+  .btn {
+     @include button-shadow($grayish-yellow-key-background, $btn-shadow, $dark-grayish-orange-key-shadow, $darkest-grayish-yellow);
+  }
+
+  .btn-del,
+  .btn-reset {
+    @include button-shadow($dark-cyan-key-background, $btn-shadow, $darkest-cyan-key-shadow, $white-color);
+  }
+
+  .btn-equals {
+     @include button-shadow($orange-key-background, $btn-shadow, $dark-orange-key-shadow, $white-color);
+  }
+
+}
+
+// Theme 3: Dark Purple
+.theme-purple  {
+  .color-switch-purple {  
+    @include color-switch($cyan-key-background);    
+  }
+  .color-themes {
+    background-color: $darkest-violet-toggle-background;    
+  }
+  input[type=text] {
+    @include input-styles($darkest-violet-toggle-background, $light-yellow);   
+  }
+   .calc-btn-container{
+    background-color: $darkest-violet-toggle-background;
+  }
+
+  .btn {  
+    @include button-shadow($darkest-violet-key-background, $btn-shadow, $dark-magenta-key-shadow, $light-yellow);
+  }
+
+  .btn-del,
+  .btn-reset {
+     @include button-shadow($dark-violet-key-background, $btn-shadow, $magenta-key-shadow, $white-color);
+  }
+
+  .btn-equals { 
+     @include button-shadow($cyan-key-background, $btn-shadow, $soft-cyan-key-shadow, $very-dark-blue);
+  }
+}

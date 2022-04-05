@@ -1,0 +1,287 @@
+/* Theme one */
+/* Backgrounds */
+/* Keys */
+/* Text */
+/* Theme 2 */
+/* Backgrounds */
+/* Keys */
+/* Text */
+/* Theme 3*/
+/* Backgroubd */
+/* Keys */
+/* Text */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 50px auto;
+  font-family: 'Spartan', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 25px; }
+
+h6 {
+  font-size: 12px;
+  text-transform: uppercase; }
+
+label {
+  cursor: pointer; }
+
+.theme-blue {
+  background-color: #3a4764;
+  color: white;
+  text-align: center; }
+
+.calc-section {
+  max-width: 40%;
+  margin: auto; }
+
+.calc-screen {
+  border-radius: var(--border-radius);
+  margin-bottom: 20px; }
+
+.calc-screen input {
+  display: inline-block;
+  padding: 25px;
+  width: 100%;
+  text-align: right;
+  outline: 0;
+  border: 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  font-size: 37px;
+  font-weight: 700; }
+
+.calc-btn-container,
+.calc-btn-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.calc-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+
+.theme-switcher-container {
+  display: flex;
+  align-items: flex-end; }
+  .theme-switcher-container h6 {
+    margin-right: 10px; }
+
+.color-numbers {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px; }
+
+.color-themes {
+  display: flex; }
+
+.calc-section {
+  max-width: 40%;
+  margin: auto; }
+
+.calc-screen {
+  border-radius: 8px;
+  margin-bottom: 20px; }
+  .calc-screen input[type=text] {
+    display: inline-block;
+    padding: 25px;
+    width: 100%;
+    text-align: right;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 37px;
+    font-weight: 700; }
+
+.calc-btn-container,
+.calc-btn-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.calc-btn-container {
+  padding: 30px 20px;
+  border-radius: 8px; }
+
+.theme-blue {
+  background-color: #3a4764;
+  color: white;
+  text-align: center; }
+
+.theme-white {
+  background-color: #e6e6e6; }
+
+.theme-purple {
+  background-color: #160628;
+  color: #ffe53d; }
+
+.color-themes {
+  padding: 4px 8px;
+  border-radius: 60px;
+  margin-top: 2px;
+  background-color: rgba(0, 0, 0, 0.15); }
+
+.color-switch {
+  padding: 0 7px;
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+  border: none;
+  cursor: pointer; }
+
+.theme-blue .color-switch-blue {
+  display: block;
+  background-color: #d03f2f; }
+
+.theme-blue input[type=text] {
+  background-color: #182034;
+  color: white; }
+
+.theme-blue .calc-btn-container,
+.theme-blue .color-themes {
+  background-color: #232c43; }
+
+.theme-blue .btn {
+  background-color: #eae3dc;
+  -webkit-box-shadow: 0px 4px 1px -1px #b4a597;
+  -moz-box-shadow: 0px 4px 1px -1px #b4a597;
+  box-shadow: 0px 4px 1px -1px #b4a597;
+  color: #444b5a; }
+
+.theme-blue .btn-del,
+.theme-blue .btn-reset {
+  background-color: #637097;
+  -webkit-box-shadow: 0px 4px 1px -1px #404e72;
+  -moz-box-shadow: 0px 4px 1px -1px #404e72;
+  box-shadow: 0px 4px 1px -1px #404e72;
+  color: white; }
+
+.theme-blue .btn-equals {
+  background-color: #d03f2f;
+  -webkit-box-shadow: 0px 4px 1px -1px #93261a;
+  -moz-box-shadow: 0px 4px 1px -1px #93261a;
+  box-shadow: 0px 4px 1px -1px #93261a;
+  color: white; }
+
+.theme-white .color-switch-white {
+  display: block;
+  background-color: #ca5502; }
+
+.theme-white input[type=text] {
+  background-color: #ededed;
+  color: #35352c; }
+
+.theme-white .calc-btn-container,
+.theme-white .color-themes {
+  background-color: #d1cccc; }
+
+.theme-white .btn {
+  background-color: #e5e4e1;
+  -webkit-box-shadow: 0px 4px 1px -1px #a69d91;
+  -moz-box-shadow: 0px 4px 1px -1px #a69d91;
+  box-shadow: 0px 4px 1px -1px #a69d91;
+  color: #35352c; }
+
+.theme-white .btn-del,
+.theme-white .btn-reset {
+  background-color: #377f86;
+  -webkit-box-shadow: 0px 4px 1px -1px #1b5f65;
+  -moz-box-shadow: 0px 4px 1px -1px #1b5f65;
+  box-shadow: 0px 4px 1px -1px #1b5f65;
+  color: white; }
+
+.theme-white .btn-equals {
+  background-color: #ca5502;
+  -webkit-box-shadow: 0px 4px 1px -1px #893901;
+  -moz-box-shadow: 0px 4px 1px -1px #893901;
+  box-shadow: 0px 4px 1px -1px #893901;
+  color: white; }
+
+.theme-purple .color-switch-purple {
+  display: block;
+  background-color: #00e0d1; }
+
+.theme-purple .color-themes {
+  background-color: #1d0934; }
+
+.theme-purple input[type=text] {
+  background-color: #1d0934;
+  color: #ffe53d; }
+
+.theme-purple .calc-btn-container {
+  background-color: #1d0934; }
+
+.theme-purple .btn {
+  background-color: #341c4f;
+  -webkit-box-shadow: 0px 4px 1px -1px #871c9c;
+  -moz-box-shadow: 0px 4px 1px -1px #871c9c;
+  box-shadow: 0px 4px 1px -1px #871c9c;
+  color: #ffe53d; }
+
+.theme-purple .btn-del,
+.theme-purple .btn-reset {
+  background-color: #58077d;
+  -webkit-box-shadow: 0px 4px 1px -1px #bc15f4;
+  -moz-box-shadow: 0px 4px 1px -1px #bc15f4;
+  box-shadow: 0px 4px 1px -1px #bc15f4;
+  color: white; }
+
+.theme-purple .btn-equals {
+  background-color: #00e0d1;
+  -webkit-box-shadow: 0px 4px 1px -1px #6cf9f2;
+  -moz-box-shadow: 0px 4px 1px -1px #6cf9f2;
+  box-shadow: 0px 4px 1px -1px #6cf9f2;
+  color: #1b2428; }
+
+.calc-btn-container {
+  padding: 30px 20px;
+  border-radius: 8px; }
+
+.btn,
+.btn-equals,
+.btn-reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 20%;
+  padding: 10px 15px 6px;
+  border: 0;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer; }
+
+.btn:nth-child(4n),
+.btn-equals {
+  margin-right: 0; }
+
+.btn-reset,
+.btn-del {
+  font-size: 16px; }
+
+.btn-equals,
+.btn-reset {
+  margin-bottom: 0; }
+
+@media screen and (max-width: 767px) {
+  .calc-section {
+    max-width: 90%; }
+  .calc-btn-container {
+    padding: 26px 12px; }
+  .btn, .btn-reset {
+    margin-right: 10px; }
+  .btn-equals {
+    margin-right: 0; } }

@@ -1,0 +1,14 @@
+{
+  "name": "1.1",
+  "version": "1.0.0",
+  "description": "Digital Calculator",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "Anitha",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

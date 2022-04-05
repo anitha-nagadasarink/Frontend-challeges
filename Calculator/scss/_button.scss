@@ -1,0 +1,36 @@
+.calc-btn-container {
+  padding: 30px 20px;
+  border-radius: $border-radius;
+}
+
+.btn,
+.btn-equals,
+.btn-reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 20%;
+  padding: 10px 15px 6px;
+  border: 0;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:nth-child(4n),
+.btn-equals {
+  margin-right: 0;
+}
+
+.btn-reset,
+.btn-del {
+  font-size: 16px;
+}
+
+.btn-equals,
+.btn-reset {
+  margin-bottom: 0;
+}

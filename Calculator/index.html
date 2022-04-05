@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator App</title>
+  <meta charset="URF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+
+</head>
+<body class="theme-blue">
+  <main class="calc-section">
+    <div class="calc-container">
+      <div class="calc-toggle-container">
+        <h1>Calc</h1>
+
+        <div class="theme-switcher-container">
+          <h6>Theme</h6>
+          <div class="color-switeches">
+            <div class="color-numbers">
+              <label for="color-switch-blue">1</label>
+              <label for="color-switch-white">2</label>
+              <label for="color-switch-purple">3</label>
+            </div>
+            <div class="color-themes">
+
+              <input type="button" id="color-switch-blue" class="color-switch color-switch-blue" />
+              <input type="button" id="color-switch-white" class="color-switch color-switch-white" />
+              <input type="button" id="color-switch-purple" class="color-switch color-switch-purple" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calc-screen">
+        <form name="calc" class="calc">
+          <input type="text" name="text" class="result" readonly id="screen"/>
+        </form>
+      </div>
+      <!-- Calc Screem -->
+      <div class="calc-btn-container">
+
+        <button class="btn btn-number" data-number="7" onclick="document.calc.text.value+='7'">7</button>
+        <button class="btn btn-number" data-number="8" onclick="document.calc.text.value+='8'">8</button>
+        <button class="btn btn-number" data-number="9" onclick="document.calc.text.value+='9'">9</button>
+
+        <button class="btn btn-del" data-sing="del" onclick="del()">DEL</button>
+
+        <button class="btn btn-number" data-number="4" onclick="document.calc.text.value+='4'">4</button>
+        <button class="btn btn-number" data-number="5" onclick="document.calc.text.value+='5'">5</button>
+        <button class="btn btn-number" data-number="6" onclick="document.calc.text.value+='6'">6</button>
+
+        <button class="btn btn-sign" data-number="+" onclick="document.calc.text.value+='+'">+</button>
+
+        <button class="btn btn-number" data-number="1" onclick="document.calc.text.value+='1'">1</button>
+        <button class="btn btn-number" data-number="2" onclick="document.calc.text.value+='2'">2</button>
+        <button class="btn btn-number" data-number="3" onclick="document.calc.text.value+='3'">3</button>
+
+        <button class="btn btn-sign" data-number="-" onclick="document.calc.text.value+='-'">-</button>
+
+        <button class="btn btn-number" data-number="." onclick="document.calc.text.value+='.'">.</button>
+        <button class="btn btn-number" data-number="0" onclick="document.calc.text.value+='0'">0</button>
+        <button class="btn btn-sign" data-number="/" onclick="document.calc.text.value+='/'">/</button>
+
+        <button class="btn btn-sign" data-number="x" onclick="document.calc.text.value+='*'">X</button>
+
+        <button class="btn-reset" onclick="document.calc.text.value=''">RESET</button>
+        <button class="btn-equals" onclick="document.calc.text.value=eval(calc.text.value)">=</button>
+
+      </div>
+    </div>
+  </main>
+  <script src="js/calculator.js"></script>
+</body>
+
+</html>
