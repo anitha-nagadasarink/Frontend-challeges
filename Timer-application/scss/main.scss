@@ -1,0 +1,170 @@
+//Colors Declarations
+
+$grayish-blue: hsl(237, 18%, 59%);
+$soft-red: hsl(345, 95%, 68%);
+$white: hsl(0, 0%, 100%);
+$dark-desaturated-blue: hsl(236, 21%, 26%);
+$very-dark-blue: hsl(235, 16%, 14%);
+$very-darkest-blue: hsl(234, 17%, 12%);
+
+// Reset CSS
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: url('images/timer/bg-stars.svg'), no-repeat, $very-darkest-blue;
+    color: $white;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+// Timer Styles
+.timer-main {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   padding: 50px;
+   height: 100vh;
+   background: url('images/timer/pattern-hills.svg') no-repeat;
+   background-position: bottom right;
+  
+  .timer-section {
+    margin-top: 40px;
+    
+      h1 {
+        margin-bottom: 80px;
+        font-size: 22px;
+        font-weight: 100;
+        letter-spacing: 5px;
+       }
+    h4 {
+       color: var(--grayish-blue);
+       text-transform: uppercase;
+       letter-spacing: 4px;
+      
+      @media all and (max-width: 767px){
+        font-size: 10px;
+        letter-spacing: 2px;
+      }
+     }
+    }
+  
+   .timer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+     &>div[class$="-container"]:not(:last-child) {
+       margin-right: 30px;
+       
+       @media all and (max-width: 767px){
+          margin-right: 10px;
+       }
+    }
+      .timer-box {     
+        position: relative;
+        width: 160px;
+        min-height: 130px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: $dark-desaturated-blue;
+        color: $soft-red;
+        font-size: 64px;
+       font-weight: 700;
+       box-shadow: 0 8px 3px -2px rgba(0, 0, 0, 0.5);
+       -webkit-box-shadow: 0 8px 3px -2px rgba(0, 0, 0, 0.5);
+       -o-box-shadow: 0 8px 3px -2px rgba(0, 0, 0, 0.5);
+       transition: all .2s ease-out; 
+        
+        @media all and (max-width: 767px){
+          width: 72px;
+          min-height: 60px;
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
+        
+        &:before,
+        &:after {
+          position: absolute;
+          content: ' ';
+          top: 0;
+          bottom: 0;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          margin: auto;
+          background-color: $very-darkest-blue;
+          
+          @media all and (max-width: 767px){
+            width: 10px;
+            height: 10px;
+          }
+        }
+        &:before {
+          left: -6px;
+       }
+       &:after {
+         right: -5px
+       }
+       h3 {
+         position: relative;
+         display: block;
+         padding: 20px 30px; 
+         
+         &::before {
+           position: absolute;
+           content: ' ';
+           top: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           width: 100%;
+           height: 2px;
+           margin: auto;
+           background-color: $very-darkest-blue;
+           opacity: .2;
+         }
+         @media all and (max-width: 767px){
+            padding: 10px 8px;
+         }
+      } 
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .social-media-icons a {
+      display: inline-flex;
+      margin-bottom: 20px;
+      color: $grayish-blue;
+      font-size: 28px;
+      transition: all .25s ease-in;
+      text-decoration: none;
+      
+      &:hover {
+        color: $soft-red;
+      }
+      &:not(:last-child) {
+       margin-right: 30px;
+     }
+    }
+    
+     .attribution { 
+      font-size: 11px;
+      text-align: center; 
+    }
+    .attribution a { 
+      color: $white; 
+    }
+  }
+}
