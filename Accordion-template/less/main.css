@@ -1,0 +1,118 @@
+*,
+*::before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+img {
+  max-width: 100%;
+}
+section {
+  padding: 128px 0;
+  background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+.container {
+  display: flex;
+  max-width: 950px;
+  flex-wrap: wrap;
+  padding: 75px 0;
+  border-radius: 22px;
+  margin: auto;
+  background: #fff;
+}
+.col-4 {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.col-8 {
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding-right: 120px;
+  padding-left: 60px;
+}
+h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.mobile-image {
+  display: none;
+}
+.image-container {
+  position: relative;
+}
+.image-container::after {
+  position: absolute;
+  content: '';
+  background: url('../images/illustration-box-desktop.svg') no-repeat;
+  width: 155px;
+  height: 111px;
+  left: -90px;
+  bottom: 85px;
+}
+.custom-acc {
+  color: hsl(237, 12%, 33%);
+}
+.custom-acc-heading {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 0;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+.custom-acc-heading::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  width: 10px;
+  height: 8px;
+  margin: auto;
+  background: url('../images/icon-arrow-down.svg');
+  transition: all 0.3s ease-in;
+}
+.custom-acc-content {
+  display: none;
+  margin: 15px 0;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+}
+.active .custom-acc-heading {
+  font-weight: 700;
+}
+.active .custom-acc-heading::after {
+  transform: rotate(180deg);
+}
+.active .custom-acc-content {
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  .col-4,
+  .col-8 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+  }
+  .image-container::after {
+    display: none;
+  }
+}

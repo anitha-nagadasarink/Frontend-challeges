@@ -1,0 +1,147 @@
+<!-- Omshakthi amma Shivappa 
+Gananapathi Siddhi Buddhi
+Visnu Lakshmi Brahama Saraswathi
+Dakshina murthy Haygriva
+Sri Venkateshwara Sri Vidya Vijaya Ganana Dhyrya Aurogya Lakshmi devi -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="less/main.css" rel="stylesheet"/>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
+</head>
+
+<body>
+  <section>
+    <!-- <div class="container">
+      <div class="col-4">
+        <img src="images/illustration-woman-online-desktop.svg" alt="Woman image" />
+      </div>
+      <div class="col-8">
+        <h1>FAQ</h1>
+        <div>
+          <div class="acc-container">
+            <input type="radio" name="tab-1" id="tab-1"/>
+            <label for="tab-1"> Custom Accordion Heading 1</label>
+            <div class="tab-content">
+              <h2>Content Title (don't use h1 tag here)</h2>
+              <p>Some content.... </p>p>
+            </div>
+          </div>
+          <div class="acc-container">
+            <input type="radio" name="tab-2" id="tab-2"/>
+            <label for="tab-2"> Custom Accordion Heading 2</label>
+            <div class="tab-content">
+              <h2>Content Title (don't use h1 tag here)</h2>
+              <p>Some content.... </p
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="container"> 
+      <div class="col-4 image-container desktop-image"><img src="images/illustration-woman-online-desktop.svg" alt="Woman image" /></div>
+      <div class="col-4 image-container mobile-image"><img src="images/illustration-woman-online-mobile.svg" alt="Woman image" /></div>
+      
+      <div class="col-8">
+        <h1>FAQ</h1>
+        <div class="custom-acc-container">
+          <div class="custom-acc-holder" data-acc-holder="1">
+            <div class="custom-acc-heading" data-acc-heading="1">
+               Custom Accordion Heading 1
+            </div>
+            <div class="custom-acc-content" >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis dignissimos, accusamus quaerat esse,
+              eum laboriosam ratione optio soluta vitae dolores cupiditate eveniet ducimus ex et deserunt laborum est
+              voluptates!
+            </div>
+          </div>
+          <div class="custom-acc-holder" data-acc-holder="2">
+            <div class="custom-acc-heading" data-acc-heading="2">
+               Custom Accordion Heading 2
+            </div>
+            <div class="custom-acc-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis dignissimos, accusamus quaerat esse,
+              eum laboriosam ratione optio soluta vitae dolores cupiditate eveniet ducimus ex et deserunt laborum est
+              voluptates!
+            </div>
+          </div>
+          <div class="custom-acc-holder" data-acc-holder="3">
+            <div class="custom-acc-heading" data-acc-heading="3">
+               Custom Accordion Heading 3
+            </div>
+            <div class="custom-acc-content" >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis dignissimos, accusamus quaerat esse,
+              eum laboriosam ratione optio soluta vitae dolores cupiditate eveniet ducimus ex et deserunt laborum est
+              voluptates!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script>  
+  var accHeadings = document.querySelectorAll('.custom-acc-heading');
+  var accContainer = document.querySelector('.custom-acc-holder');
+  // console.log(accContainer);
+
+  //  accHeader.addEventListener('click', function(e){
+  //   var accHolder = document.querySelector('.custom-acc-holder');
+  
+  //   var accContent = document.querySelector('.custom-acc-content');
+  //   var accDataHeading = accHeading.getAttribute('acc-heading');
+  //   var accDataContent = accHeading.getAttribute('acc-content');
+
+  //    this.parentElement.classList.toggle('active');  
+
+  //    console.log(accDataHeading, accDataContent);
+  //  });
+
+   accHeadings.forEach(accHeading => {
+    accHeading.addEventListener('click', function(e){
+      var accHeadingData = accHeading.getAttribute('data-acc-heading'); 
+     // var accHolderData = document.querySelectorAll('.custom-acc-holder').getAttribute('data-acc-holder');   
+      // if(accContainer+accHeadingData === accHeadingData)  
+
+      // if( accHeadingData== accHolderData) 
+       this.parentElement.classList.toggle('active');        
+      });
+   });
+
+
+
+
+
+
+  </script> 
+</body>
+
+</html>
